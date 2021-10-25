@@ -4,16 +4,14 @@ const nextBtn = document.querySelector(".btn-next");
 const slides = document.querySelectorAll(".carousel img");
 
 let counter = 0;
+const imageSize = slides[0].clientWidth;
 
 nextBtn.addEventListener("click", () => {
-  const imageSize = slides[0].clientWidth;
   counter++;
   carousel.style.transform = `translateX(${-imageSize * counter}px)`;
-  console.log(imageSize);
 });
 
 prevBtn.addEventListener("click", () => {
-  const imageSize = slides[0].clientWidth;
   counter--;
   carousel.style.transform = `translateX(${-imageSize * counter}px)`;
 });
