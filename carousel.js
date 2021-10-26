@@ -5,8 +5,8 @@ const nextBtn = document.querySelector(".btn-next");
 const slides = document.querySelectorAll(".carousel img");
 
 // variables
-const imageSize = slides[0].clientWidth;
-let direction = "";
+let imageSize = slides[0].clientWidth;
+let direction = "right";
 
 // next button event
 nextBtn.addEventListener("click", () => {
