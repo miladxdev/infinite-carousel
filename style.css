@@ -9,25 +9,26 @@ body {
 }
 
 .carousel-wrap {
+  display: flex;
+  flex-direction: row-reverse;
   position: relative;
-  /* border: dashed red; */
-  /* width: 1200px; */
+  border: dashed red;
   max-width: 900px;
   margin: 0 auto;
   /* border-radius: 28px; */
-  background-color: brown;
   /* overflow: hidden; */
+  background-color: brown;
 }
 
 .carousel {
   /* border: solid blue; */
   display: flex;
+  justify-content: flex-start;
   width: 100%;
-  flex-shrink: 0;
-  align-items: flex-start;
   transition: all 0.5s;
 }
 .carousel-item {
+  position: relative;
   width: 100%;
   flex-shrink: 0;
   /* border: solid green; */
@@ -36,6 +37,17 @@ body {
 .carousel img {
   display: block;
   width: 100%;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  padding: 8px 14px;
+  color: white;
+  font-size: 4rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
 }
 
 .btn-next,
