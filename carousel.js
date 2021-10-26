@@ -5,11 +5,14 @@ const nextBtn = document.querySelector(".btn-next");
 const slides = document.querySelectorAll(".carousel img");
 
 // variables
-let imageSize = slides[0].clientWidth;
+imageSize = slides[0].clientWidth;
+let = 0;
 let direction = "right";
 
 // next button event
 nextBtn.addEventListener("click", () => {
+  imageSize = slides[0].clientWidth;
+
   if (direction === "left") {
     // to fix image order
     carousel.prepend(carousel.lastElementChild);
@@ -22,6 +25,8 @@ nextBtn.addEventListener("click", () => {
 
 // prev button event
 prevBtn.addEventListener("click", () => {
+  imageSize = slides[0].clientWidth;
+
   if (direction === "right") {
     carousel.appendChild(carousel.firstElementChild);
   }
